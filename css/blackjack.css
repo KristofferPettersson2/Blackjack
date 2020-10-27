@@ -1,0 +1,25 @@
+h1 {
+    font-size: 500%;
+}
+
+p {
+    font-size: 500%;
+}
+
+table{font-size: 200%;}
+
+/* WinnerColor */
+.red {
+    color: red;
+    font-size: 100%;
+}
+
+.green {
+    color: green;
+    font-size: 100%;
+}
+
+.yellow {
+    color: orange;
+    font-size: 100%;
+}

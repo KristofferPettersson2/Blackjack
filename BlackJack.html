@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blackjack.css">
+</head>
+
+<body class="body">
+    <div id="wrapper" class="mt-5">
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="my-5">BlackJack</h1>
+            <p>Dealer<span id="dealer-cards" class="mt-5 ml-5"></span></p>
+            <p>Player<span id="player-cards" class="mt-5 ml-5"></span></p>
+        </div>
+        <div class="d-flex flex-row justify-content-center mt-5">
+            <button id="new-game-btn" class="btn btn-primary m-3 shadow">New Game</button>
+            <button id="new-card-btn" class="btn btn-success m-3 shadow">New Card</button>
+            <button id="stay-btn" class="btn btn-warning m-3 shadow">Stay</button>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <h1 id="winner-area" class="mt-5"></h1>
+        </div>
+        <button id="clear-scoreboard" class="btn btn-warning m-3 shadow">Clear Scoreboard</button>
+        <table class=" table table-dark text-center">
+            <thead>
+                <th scope="col">Player</th>
+                <th scope="col">Dealer</th>
+                <th scope="col">Winner</th>
+                </tr>
+            </thead>
+            <tbody id="scoreboard" class="">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/Blackjack Setup.js"></script>
+    <script src="js/Card Collection.js"></script>
+    <script src="js/Determine Winner.js"></script>
+    <script src="js/stay.js"></script>
+    <script src="js/scoreboard.js"></script>
+</body>
+
+</html>
